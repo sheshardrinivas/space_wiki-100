@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" type="x-icon" href="Screenshot (79).png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MUSEUM OF ROCKETS</title>
+</head>
+<body style="text-align:left; background-image: url(1124099.webp);">
+    <img src="Screenshot (79).png" width="35px" height="35px">
+
+    <center>
+        <header style="color: white;font-family: 'Courier New', Courier, monospace; font-size: larger;">MUSEUM OF ROCKETS</header>
+        <br>
+        <h1 style="color: white; font-size: medium; font-family: 'Courier New', Courier, monospace;" id="in">Press Right Arrow Key For Next And Left For Back.</h1>
+        <br>
+        
+        <br>
+        <br>
+<img src="Screenshot (68).png" width="310px"height="590px" id="img1">
+<br><samp>
+<button onclick="next()" style="color: white; width: 30%; background-image: url(1124099.webp);">NEXT</button> <button onclick="back()" style="color: white; width: 30%; background-image: url(1124099.webp);">BACK</button> 
+</samp>
+<br>
+
+
+
+
+
+
+
+
+
+    </center>
+   <script>
+   
+    var ch= document.getElementById("img1");
+    valuefor=["https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/MX-774_missile.jpg/330px-MX-774_missile.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Redstone_09.jpg/450px-Redstone_09.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Atlas_2E_Ballistic_Missile.jpg/330px-Atlas_2E_Ballistic_Missile.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Jupiter_emplacement.jpg/450px-Jupiter_emplacement.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Thor_IRBM.jpg/375px-Thor_IRBM.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Atlas_missile_launch.jpg/330px-Atlas_missile_launch.jpg","https://upload.wikimedia.org/wikipedia/commons/4/4c/Vanguard_rocket_vanguard1_satellite.jpg","https://upload.wikimedia.org/wikipedia/commons/a/a9/Juno-1_explorer-2.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Atlas-B_with_Score_payload.jpg/330px-Atlas-B_with_Score_payload.jpg","https://upload.wikimedia.org/wikipedia/commons/6/61/Thor-Able_II_Transit_1A.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Juno_II_rocket.jpg/330px-Juno_II_rocket.jpg","https://upload.wikimedia.org/wikipedia/commons/0/01/Atlas_C.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Titan_1_ICBM.jpg/345px-Titan_1_ICBM.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Atlas-icbm-erection-large.jpg/330px-Atlas-icbm-erection-large.jpg","https://upload.wikimedia.org/wikipedia/commons/9/92/Atlas-Able.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Thor_Agena_B_with_Discoverer_37_on_launch_pad_%28Jan._13_1962%29.jpg/330px-Thor_Agena_B_with_Discoverer_37_on_launch_pad_%28Jan._13_1962%29.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Little_Joe_on_launcher_at_Wallops_Island_-_GPN-2000-001883.jpg/330px-Little_Joe_on_launcher_at_Wallops_Island_-_GPN-2000-001883.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Atlas_Agena_launching_Lunar_Orbiter_4.jpg/330px-Atlas_Agena_launching_Lunar_Orbiter_4.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Thor_Able_Star_with_Transit_VBN-2_Dec_5_1963.jpg/330px-Thor_Able_Star_with_Transit_VBN-2_Dec_5_1963.jpg","https://upload.wikimedia.org/wikipedia/commons/0/04/Thor_Delta_with_Explorer_10_Mar_25_1961.jpg","https://upload.wikimedia.org/wikipedia/commons/7/7a/Atlas-E.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Ham_Launch_-_GPN-2000-001007_%28cropped%29.jpg/330px-Ham_Launch_-_GPN-2000-001007_%28cropped%29.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Launch_of_Friendship_7_-_GPN-2000-000686.jpg/330px-Launch_of_Friendship_7_-_GPN-2000-000686.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Scout_launch_vehicle.jpg/330px-Scout_launch_vehicle.jpg","https://upload.wikimedia.org/wikipedia/commons/b/bf/SA-1_launch.jpg","https://upload.wikimedia.org/wikipedia/commons/0/0c/Atlas-F.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/MK6_TITAN_II.jpg/330px-MK6_TITAN_II.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/LGM-30-Minuteman-II.jpg/330px-LGM-30-Minuteman-II.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Surveyor_1_launch.jpg/330px-Surveyor_1_launch.jpg","https://upload.wikimedia.org/wikipedia/commons/3/3e/Thor_Delta_A_with_Explorer_14_%28Oct._2%2C_1962%29.png","https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Thor_Delta_B_with_TIROS_8_%28Dec._21_1963%29.png/330px-Thor_Delta_B_with_TIROS_8_%28Dec._21_1963%29.png","https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Apollo-_Little_Joe_II_Liftoff_%28December_8%2C_1964%29_-_cropped.jpg/330px-Apollo-_Little_Joe_II_Liftoff_%28December_8%2C_1964%29_-_cropped.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Thor_Delta_C_with_Explorer_18_%28Nov._27_1963%29.jpg/330px-Thor_Delta_C_with_Explorer_18_%28Nov._27_1963%29.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Gemini-Titan_11_Launch_-_GPN-2000-001020.jpg/330px-Gemini-Titan_11_Launch_-_GPN-2000-001020.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Delta_D_Intelsat1.jpg/330px-Delta_D_Intelsat1.jpg","https://upload.wikimedia.org/wikipedia/commons/5/53/Titan_IIIA.jpg","https://upload.wikimedia.org/wikipedia/commons/7/79/Thor-Burner.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/DF-SC-84-05192_cropped.jpeg/330px-DF-SC-84-05192_cropped.jpeg","https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Atlas-E-F_with_solid_fuel_upper_stage.jpg/330px-Atlas-E-F_with_solid_fuel_upper_stage.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Delta-E_launching_Pioneer-6.jpg/330px-Delta-E_launching_Pioneer-6.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Aerial_View_of_Launch_Complex_14_-_GPN-2000-000609.jpg/375px-Aerial_View_of_Launch_Complex_14_-_GPN-2000-000609.jpg","https://upload.wikimedia.org/wikipedia/en/thumb/4/4f/Saturn_IB_launch_configurations.jpg/330px-Saturn_IB_launch_configurations.jpg","https://upload.wikimedia.org/wikipedia/commons/a/a0/Titan_23B.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Thorad_Agena-D_launching_POPPY_satellite.jpg/330px-Thorad_Agena-D_launching_POPPY_satellite.jpg","https://upload.wikimedia.org/wikipedia/commons/9/9e/Delta_G.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Apollo_11_Launch_-_GPN-2000-000630.jpg/330px-Apollo_11_Launch_-_GPN-2000-000630.jpg","https://upload.wikimedia.org/wikipedia/commons/b/b7/Delta_J.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Pioneer_E_Launch_GPN-2003-00038.jpg/330px-Pioneer_E_Launch_GPN-2003-00038.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Delta-M_launching_Intelsat-3_satellite.jpg/330px-Delta-M_launching_Intelsat-3_satellite.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Delta_N6_rocket_with_ITOS_satellite.jpg/330px-Delta_N6_rocket_with_ITOS_satellite.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Titan_IIID_rocket.jpg/330px-Titan_IIID_rocket.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Delta_900_with_Nimbus-E.jpg/330px-Delta_900_with_Nimbus-E.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Delta_launches_OSO_8.jpg/330px-Delta_launches_OSO_8.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Titan_3E_Centaur_launches_Voyager_2.jpg/330px-Titan_3E_Centaur_launches_Voyager_2.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Delta_2914_launching_IUE_spacecraft.jpg/330px-Delta_2914_launching_IUE_spacecraft.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Delta_3910_rocket_with_SMM_satellite.jpg/330px-Delta_3910_rocket_with_SMM_satellite.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Thor_DSV-2U_launch_with_DMSP-5D-F5_satellite.jpg/330px-Thor_DSV-2U_launch_with_DMSP-5D-F5_satellite.jpg","https://upload.wikimedia.org/wikipedia/commons/4/46/Conestoga-1620.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/STS120LaunchHiRes-edit1.jpg/330px-STS120LaunchHiRes-edit1.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/DF-SC-83-03173_cropped.jpeg/330px-DF-SC-83-03173_cropped.jpeg","https://upload.wikimedia.org/wikipedia/commons/a/a5/Atlas-H.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Atlas-G.jpg/330px-Atlas-G.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Titan_23G_rocket.gif/330px-Titan_23G_rocket.gif","https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Delta_II_Dawn_liftoff_1.jpg/330px-Delta_II_Dawn_liftoff_1.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Titan4B_on_Launch_Complex_40.jpg/330px-Titan4B_on_Launch_Complex_40.jpg","https://upload.wikimedia.org/wikipedia/commons/6/69/Delta_4925.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/COBELaunch.jpg/330px-COBELaunch.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Cropped_Pegasus_XL.jpg/330px-Cropped_Pegasus_XL.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Commercial_Titan_3_launching_Mars_Observer.jpg/330px-Commercial_Titan_3_launching_Mars_Observer.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Atlas_I_launching_CRRES_satellite1.jpg/330px-Atlas_I_launching_CRRES_satellite1.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/DF-SC-99-00074_cropped_and_rotated.jpeg/800px-DF-SC-99-00074_cropped_and_rotated.jpeg","https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Minotaur_C_launch_%28crop_zoom%29.jpg/330px-Minotaur_C_launch_%28crop_zoom%29.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Athena_2_-_Lunar_Prospector.jpg/330px-Athena_2_-_Lunar_Prospector.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Delta_III.svg/135px-Delta_III.svg.png","https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/NFIRE1.jpg/330px-NFIRE1.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Minotaur-2_1.jpg/330px-Minotaur-2_1.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Atlas_III_Centaur.jpg/330px-Atlas_III_Centaur.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Atlas_V%28401%29_launches_with_LRO_and_LCROSS_cropped.jpg/330px-Atlas_V%28401%29_launches_with_LRO_and_LCROSS_cropped.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Delta_IV_Medium_Rocket_DSCS.jpg/330px-Delta_IV_Medium_Rocket_DSCS.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Falcon_1_Flight_4_liftoff.jpg/330px-Falcon_1_Flight_4_liftoff.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Ares_I_launch.jpg/330px-Ares_I_launch.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Minotaur-4-Lite_HTV-2a_2.jpg/330px-Minotaur-4-Lite_HTV-2a_2.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/SpaceX_Demo-2_Launch_%28NHQ202005300044%29_%28cropped%29.jpg/330px-SpaceX_Demo-2_Launch_%28NHQ202005300044%29_%28cropped%29.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Cropped_NG-11_Launch.jpg/330px-Cropped_NG-11_Launch.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Minotaur_V_carrying_LADEE_at_MARS_Pad_0B_2013-09-04.jpg/330px-Minotaur_V_carrying_LADEE_at_MARS_Pad_0B_2013-09-04.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/New_Shepard_booster_at_Oshkosh_Airventure_2017_01_%2835975649982%29.jpg/330px-New_Shepard_booster_at_Oshkosh_Airventure_2017_01_%2835975649982%29.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/TROPICS_Rocket_Launch_%28KSC-20230507-PH-RLS01_0002-reupload%29_%28cropped%29.jpg/330px-TROPICS_Rocket_Launch_%28KSC-20230507-PH-RLS01_0002-reupload%29_%28cropped%29.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Falcon_Heavy_Demo_Mission_%2839337245145%29.jpg/330px-Falcon_Heavy_Demo_Mission_%2839337245145%29.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Astra_Rocket_3.0_first_mission_10.jpg/450px-Astra_Rocket_3.0_first_mission_10.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/LauncherOne_Diagram.svg/188px-LauncherOne_Diagram.svg.png","https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Firefly_Alpha_Diagram.svg/330px-Firefly_Alpha_Diagram.svg.png","https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Artemis_I_Launch_%28NHQ202211160017%29.jpg/330px-Artemis_I_Launch_%28NHQ202211160017%29.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Terran1.svg/60px-Terran1.svg.png","https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/StarshipLaunch.jpg/195px-StarshipLaunch.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/A_rough_mock-up_of_the_Vulcan_Centaur.jpg/330px-A_rough_mock-up_of_the_Vulcan_Centaur.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/New_Glenn.svg/320px-New_Glenn.svg.png","https://upload.wikimedia.org/wikipedia/en/8/81/New_Neutron_rocket.png","https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/TERRAN-R-DIAGRAM.png/75px-TERRAN-R-DIAGRAM.png"]
+cha=-1;
+window.addEventListener("keydown",my_keydown)
+function my_keydown(e){
+keyPressed=e.keyCode;
+console.log(keyPressed);
+if (keyPressed==39) {
+   cha=cha+1; 
+   ch.src=valuefor[cha];
+   document.getElementById("in").style.display="none";
+}
+if (keyPressed==37) {
+ cha=cha-1; 
+ ch.src=valuefor[cha];  
+}
+if (cha>=98) {
+   cha=0; 
+   ch.src=valuefor[cha]; 
+}
+
+
+}
+function next(){
+    cha=cha+1; 
+   ch.src=valuefor[cha];
+   document.getElementById("in").style.display="none";
+
+   if (cha>=98) {
+   cha=0; 
+   ch.src=valuefor[cha]; 
+}
+
+}
+function back(){
+    cha=cha-1; 
+   ch.src=valuefor[cha];
+   document.getElementById("in").style.display="none";
+   if (cha>=98) {
+   cha=0; 
+   ch.src=valuefor[cha]; 
+}
+}
+   </script>
+</body>
+</html>

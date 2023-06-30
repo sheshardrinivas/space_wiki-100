@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" type="x-icon" href="Screenshot (79).png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPACE WIKI</title>
+</head>
+<body  style="text-align:left; background-image: url(1124099.webp); " >
+    <img src="Screenshot (79).png" height="35px" width="40px">
+    <center>
+<section style="background-image: url(1124099.webp);text-align: center;">
+    <header  style=" color: aliceblue; font-family:'Courier New', Courier, monospace;font-size:25px;">Welcome To The Space Wiki</header>
+   
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+   
+   
+   
+    
+    <header  style=" color: aliceblue; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size:50px;">SPACE WIKI</header>
+    <br>
+<input type="text" id="word" style="background-image: url(1124099.webp); width: 40%;color: aliceblue;" placeholder="Search About Space">
+<br>
+<br>
+<br>
+<button onclick="ne()" style="width: 40%; color: aliceblue; background-image: url(1124099.webp);" >SEARCH</button>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+
+
+
+
+</section>
+</center>
+<script>
+function ne(){
+    search=document.getElementById("word").value;
+    lowsearch=search.toLowerCase()
+    console.log(lowsearch);
+    keyword=["history of nasa","blackhole","museum of rockets","working of rockets"];
+    url=["history.html","black.html","rockets.html","working.html"];
+    spacein=" ";
+    //space mean div beteenw lowercase and uppercase
+    //history
+   if (lowsearch==keyword[0]) { 
+    document.getElementById("word").innerHTML=spacein;                
+    window.location=url[0];
+    }
+   //space;
+    if (search==keyword[0]) {   
+        document.getElementById("word").innerHTML=spacein;                
+    window.location=url[0];
+    }
+//black hole
+if (lowsearch==keyword[1]) {  
+    document.getElementById("word").innerHTML=spacein;                 
+    window.location=url[1];
+   }
+   //space;
+    if (search==keyword[1]) {   
+        document.getElementById("word").innerHTML=spacein;                
+    window.location=url[1];  
+    }
+    //museum of rocket
+    if (lowsearch==keyword[2]) {   
+        document.getElementById("word").innerHTML=spacein;                
+    window.location=url[2];
+   }
+   //space;
+    if (search==keyword[2]) {    
+        document.getElementById("word").innerHTML=spacein;               
+    window.location=url[2];  
+    }
+    //working of rockets
+    if (lowsearch==keyword[3]) {   
+        document.getElementById("word").innerHTML=spacein;                
+    window.location=url[3];
+   }
+   //space;
+    if (search==keyword[3]) { 
+        document.getElementById("word").innerHTML=spacein;                  
+    window.location=url[3];  
+    }
+}
+
+</script>
+    
+</body>
+</html>
